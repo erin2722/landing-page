@@ -4,7 +4,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  overflow-x: hidden;
   font-family: 'Jost', sans-serif;
 }
 
@@ -12,6 +11,11 @@ body {
     width: 100%;
     margin: 0px;
     padding-top: 1rem;
+}
+
+html, body {
+    position:relative;
+    overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6, label, a {
@@ -52,6 +56,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -66,4 +71,15 @@ a {
 
 .nav-link:hover {
     color: gray;
+}
+
+@media only screen and (max-width: 767px) {
+    .nav-bar-wrapper {
+        width: 91%;
+        margin-left: 0rem;
+    }
+
+    .nav-link-wrapper {
+        justify-content: space-evenly;
+    }
 }

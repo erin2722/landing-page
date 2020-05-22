@@ -24,4 +24,20 @@
     max-width: 20rem;
     min-height: 20rem;
 }
+
+@media only screen and (max-width: 767px) {
+  .about-description {
+    margin: 1rem;
+    border-radius: 4rem;
+    padding: 1rem;
+  }
+  
+  .about-square-text {
+    color: whitesmoke;
+    padding: 2rem;
+    font-size: 1rem;
+    max-width: 30rem;
+    min-height: 0rem;
+  }
+}
     

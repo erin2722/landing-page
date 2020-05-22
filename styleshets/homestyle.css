@@ -3,11 +3,13 @@ label {
 }
 
 .first-fold {
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
     margin-bottom: 1rem;
+    overflow-x: hidden;
   }
 
 .question {
@@ -26,6 +28,7 @@ label {
   margin-right: -10rem;
   margin-bottom: -10rem;
   z-index: -1;
+  overflow-x: hidden;
 }
 
 .square-text {
@@ -59,3 +62,30 @@ label {
 .submit-button:hover {
   background-color: rgb(175, 175, 175);
 } 
+
+@media only screen and (max-width: 767px) {
+  .question {
+    font-family: 'Jost', sans-serif;
+    color: black;
+    font-size: 2rem;
+    margin: 2rem;
+    max-width: 40rem;
+    margin-top: 6rem;
+  }
+
+.description {
+  margin: 1rem;
+  border-radius: 4rem;
+}
+
+.square-text {
+  color: whitesmoke;
+  padding: 2rem;
+  font-size: 1rem;
+  max-width: 30rem;
+}
+
+.text-box {
+  width: 15rem;
+}
+}

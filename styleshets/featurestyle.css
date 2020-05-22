@@ -9,7 +9,6 @@
   padding: 1rem;
   max-width: 60rem;
   max-height: 50rem;
-  vertical-align: middle;
   border-radius: 2rem;
   margin-bottom: 5rem;
 }
@@ -18,6 +17,11 @@
 .mySlides {
   display: none;
   margin: 1rem;
+}
+
+.slideshow-image {
+  height:35rem; 
+  border-radius: 2rem;
 }
 
 /* Next & previous buttons */
@@ -54,7 +58,7 @@
 /* Caption text */
 .text {
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 1rem;
   padding: 2rem;
   position: absolute;
 }
@@ -100,4 +104,31 @@
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media only screen and (max-width: 767px) {
+  .slideshow-image {
+    height: 15rem;
+    border-radius: 1rem;
+  }
+
+  .mySlides {
+    margin: .5rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+  }
+
+  h4 {
+    font-size: .75rem;
+    margin-block-start: 0rem;
+    margin-block-end: 0rem;
+  }
+
+  .text {
+    padding: .5rem;
+  }
 }
