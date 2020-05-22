@@ -12,12 +12,12 @@
 
     <body>
         <div class = "nav-bar-wrapper">
-            <a href = "" class = "nav-logo">TIMIFY</a>
+            <a onclick="scrolling(0)" class = "nav-logo">TIMIFY</a>
             <div class = "nav-link-wrapper">
-                <a class = "nav-link" href = "">Home</a>
-                <a class = "nav-link" href = "">About</a>
-                <a class = "nav-link" href = "">Features</a>
-                <a class = "nav-link" href = "">Contact Us</a>
+                <a class = "nav-link" onclick="scrolling(0)">Home</a>
+                <a class = "nav-link" onclick="scrolling(1)">About</a>
+                <a class = "nav-link" onclick="scrolling(2)">Features</a>
+                <a class = "nav-link" onclick="scrolling(3)">Contact Us</a>
             </div>
         </div>
         <div class = "question">
@@ -123,7 +123,6 @@
             </div>
         </div>
 
-
         <script>
             var slideIndex = 1;
             showSlides(slideIndex);
@@ -152,6 +151,11 @@
                 }
                 slides[slideIndex-1].style.display = "block";
                 dots[slideIndex-1].className += " active";
+            }
+
+            function scrolling(n) {
+                var w = window.innerHeight;
+                window.scrollTo(0, (w - (w/6))*n);
             }
         </script>
     </body>
