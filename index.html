@@ -29,7 +29,7 @@
                     <h1>Timify manages your time for you.</h1>
                     <h3>
                         Simply tell Timify what you need to accomplish, and it will schedule out your tasks around the 
-                        prexisting events in your Google calender.
+                        preexisting events in your Google calendar.
                     </h3>
                     <h2>Interested in trying out Timify?</h1>
                     <!-- Begin Mailchimp Signup Form -->
@@ -138,6 +138,18 @@
         </div>
 
         <script>
+
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+            (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/5ecc5d15c75cbf1769ef4927/default';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+            })();
+
+
             var slideIndex = 1;
             showSlides(slideIndex);
 
@@ -169,7 +181,12 @@
 
             function scrolling(n) {
                 var w = window.innerHeight;
-                window.scrollTo(0, (w - (w/6))*n);
+                window.scrollTo({
+                    top: (w - (w/6))*n,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                // window.scrollTo(0, (w - (w/6))*n);
             }
         </script>
     </body>
