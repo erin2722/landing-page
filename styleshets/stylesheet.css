@@ -34,6 +34,10 @@ a {
     justify-content: center;
 }
 
+.logo {
+    width: 3rem;
+}
+
 .nav-bar-wrapper {
     position: fixed;
     display: flex;
@@ -88,5 +92,9 @@ a {
 
     .nav-link-wrapper {
         justify-content: space-evenly;
+    }
+
+    .nav-link {
+        font-size: .75rem;
     }
 }

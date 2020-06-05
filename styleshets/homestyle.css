@@ -41,6 +41,10 @@ label {
   padding-bottom: 15rem;
 }
 
+.form-wrapper {
+  display: flex;
+}
+
 .text-box {
   border-radius: 1rem;
   height: 1.5rem;
@@ -56,7 +60,6 @@ label {
   z-index: 0;
   height: 1.5rem;
   height:2rem;
-  width: 4rem;
 }
 
 .submit-button:hover {
