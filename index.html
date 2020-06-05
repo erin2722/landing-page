@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>TimeSort</title>
+        <link rel="icon" href="./assets/logo.svg" >
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="./styleshets/stylesheet.css"></link>
         <link rel="stylesheet" type="text/css" href="./styleshets/homestyle.css"></link>
@@ -20,7 +21,10 @@
 
     <body>
         <div class = "nav-bar-wrapper">
-            <a onclick="scrolling(0)" class = "nav-logo">TIMIFY</a>
+            <div class="logo-wrapper">
+                <img onclick="scrolling(0)" src="./assets/logo.svg" width="50" />
+                <span class = "nav-logo" onclick="scrolling(0)">TIMESORT</span>
+            </div>
             <div class = "nav-link-wrapper">
                 <a class = "nav-link" onclick="scrolling(0)">Home</a>
                 <a class = "nav-link" onclick="scrolling(1)">About</a>
@@ -67,11 +71,11 @@
                 <div class="about-square-text">
                     <h2>Why use TimeSort?</h2>
                     <h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Research from the American Psychological Association finds that at least 80% of college students 
+                        procrastinate regularly, a practice empirically shown to negatively impact their 
+                        GPA and their mental and physical health. Constructive scheduling is a proven remedy for 
+                        this problem, but, despite the abundance of physical and online calendars available, there are
+                        no tools to help students fill their available time in a fruitful manner. At least, until now.
                     </h4>
                 </div>
             </div>
@@ -79,11 +83,11 @@
                 <div class="about-square-text">
                     <h2>How does it work?</h2>
                     <h4>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Completing all of your tasks and assignments is overwhelming. Figuring out when to complete them does 
+                        not have to be. TimeSort takes the stress out of planning and managing your responsibilities by 
+                        intelligently crafting a schedule personalized for you. Simply enter in your tasks into TimeSort, 
+                        tell us how long you believe they will take you, and we will fit it into your calendar by working 
+                        around the preexisting events in your Google calendar.
                     </h4>
                 </div>
             </div>
@@ -97,13 +101,17 @@
                     <img src="./assets/timifyscreen1.PNG" class="slideshow-image">
                     <span class="text">
                         <h2>Tell us what you need to do, we will tell you when to do it</h2>
-                        <h4>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </h4>
+                        <h3>
+                            The process is simple. Input your pending tasks into TimeSort along with information about the 
+                            deadline for the task and the time you expect it to take. Link your Google Calendar, and 
+                            TimeSort will automatically sort your tasks around any already blocked out commitments on your 
+                            GCal and craft a potential schedule that allows you to complete your responsibilities efficiently.
+                             You can quickly review the schedule and rearrange as necessary. The final schedule is then added 
+                             to your Google Calendar immediately. Of course, this schedule remains completely flexible. If you 
+                             weren’t able to complete a task in the allotted time or if something important comes up, all you 
+                             have to do is indicate this in TimeSort, and our software will accommodate the change and create 
+                             a new schedule.
+                        </h3>
                     </span>
                 </div>
   
@@ -111,13 +119,14 @@
                     <img src="./assets/timifyscreen2.PNG" class="slideshow-image">
                     <span class="text">
                         <h2>Our algorithm considers your personal needs</h2>
-                        <h4>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
-                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                            non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </h4>
+                        <h3>
+                            We won’t schedule tasks outside of the times you tell us to. In addition, TimeSort lets you preview 
+                            your schedule and rearrange events before we publish your schedule. You can categorize different 
+                            events based on when in the day you would prefer to do them, and we will reorganize your schedule 
+                            if you do not get something done on time. You can save events for later to expedite your future 
+                            scheduling as well! <br><br>
+                            TimeSort works and adapts for you.                            
+                        </h3>
                     </span>
                 </div>
   
@@ -137,10 +146,13 @@
         <div class = "contact-wrapper">
             <div class = "contact-description">
                 <div class = "contact-square-text">
-                    <h1>Contact Us:</h1>
-                    <a href="">Facebook</a> <br>
-                    <a href="">Twitter</a><br>
-                    <a href="">email@email.com</a><br>
+                    <h2>Contact Us:</h2>
+                    <!-- <a href="">Facebook</a> <br>
+                    <a href="">Twitter</a><br> -->
+                    <div class="logo-wrapper">
+                        <img onclick="scrolling(0)" src="./assets/email.svg" width="45" />
+                        <span class="social-text" onclick="">help@timesort.co</span>
+                    </div>
                 </div>
             </div>
         </div>

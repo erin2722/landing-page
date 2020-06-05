@@ -15,8 +15,14 @@
 
 .contact-square-text {
   color: whitesmoke;
-  max-width: 30rem;
+  font-size: 1.5rem;
+  max-width: 20rem;
   min-height: 10rem;
-  padding: 10rem;
-  padding-top:8rem;
+  padding: 7rem;
+  padding-top:5rem;
+}
+
+.social-text {
+  cursor: pointer;
+  padding: .5rem;
 }
