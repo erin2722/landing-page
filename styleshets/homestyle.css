@@ -67,6 +67,28 @@ label {
 } 
 
 @media only screen and (max-width: 767px) {
+  h1 {
+    margin-block-start: .25rem;
+    margin-block-end: .25rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+
+  h2 {
+    font-size: 1rem;
+    padding: .25rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .first-fold {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+
   .question {
     font-family: 'Jost', sans-serif;
     color: black;
@@ -79,6 +101,7 @@ label {
 .description {
   margin: 1rem;
   border-radius: 4rem;
+  text-align: center;
 }
 
 .square-text {
@@ -89,6 +112,10 @@ label {
 }
 
 .text-box {
-  width: 15rem;
+  align-self: center;
+  width: 14rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 }

@@ -115,6 +115,9 @@ h2 {
   .slideshow-image {
     height: 15rem;
     border-radius: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .mySlides {
@@ -125,15 +128,20 @@ h2 {
     font-size: 1rem;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   h3 {
     font-size: .75rem;
     margin-block-start: 0rem;
     margin-block-end: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .text {
-    padding: .5rem;
+    padding: 1rem;
+    position: unset;
   }
 }
